@@ -1,0 +1,37 @@
+[
+    {
+        "tittle":"Catering",
+        "text":"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+        "img":"../images/New/catering (4).jpg"
+    },
+    {
+        "tittle":"Birthday",
+        "text":"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+        "img":"../images/New/birthday (3).jpg"
+    },
+    {
+        "tittle":"Photography",
+        "text":"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+        "img":"../images/New/photograhper_2.jpg"
+    },
+    {
+        "tittle":"valet and security",
+        "text":"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+        "img":"../images/New/valet_2.jpg"
+    },
+    {
+        "tittle":"Makeup",
+        "text":"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+        "img":"../images/New/makeup (1).jpg"
+    },
+    {
+        "tittle":"Card printing",
+        "text":"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+        "img":"../images/New/wed_cards_3.jpg"
+    },
+    {
+        "tittle":"Floral Stage",
+        "text":"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+        "img":"../images/New/stage (1).jpg"
+    }
+]

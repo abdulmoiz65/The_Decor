@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faqs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="../PRO_CSS/home.css">
+    <link rel="stylesheet" href="../PRO_CSS/footer.css">
+<script src="../main.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <div class="row m-5">
+      <div id="navvv"></div>
+    </div>
+  </div>
+    
+
+    <div class="container mb-5">
+        <div class="row" id="xyz"></div>
+       
+        
+    </div>
+
+    <script>
+
+        fetch("../json/faqs.json")
+        .then(Response=>Response .json())
+        .then(data=>{
+            let y="";
+                for(let faqss of data){
+                    y+=`
+                    
+                        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    ${faqss.tittle}
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>${faqss.text}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+                    `
+                }
+                document.querySelector("#xyz").innerHTML=y
+        })
+    </script>
+
+<div class="container-fluid mt-5" id="footer">
+
+</div>
+
+</body>
+</html>

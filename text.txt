@@ -1,0 +1,32 @@
+nav bar  
+        home    event   booking     packages    gallery     aboutus     contact     review      faqs
+
+* home page contain some detail about your services and web features 
+* event --> category --> |engagement, maiyo , mehndi, rukhsati etc|
+* every event card contain detail and detailed model: 
+                decoration type, packages type , catering type , or items of food and quantity of food acc. to the person.
+
+booking button :
+    if user --> click on booking --> booking form :
+          username.
+          user email 
+          phone .
+          cnic.
+
+    Event type --> builtin packages --> additional input boxes for inc. person , items , quantity.
+
+gallery section :
+    gallery section contains the images of your events and their filteration acc. to the events
+
+About us :
+        history of your website how many events you have organized , upcoming events , your achievemnets .
+
+contact us : 
+    form link to contact you .
+
+feedback : 
+    form to contain a feedback from user .
+
+reviews:
+    reviews section must be on home page .
+    

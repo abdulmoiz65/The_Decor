@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="service2.css">
+    <link rel="stylesheet" href="../PRO_CSS/home.css">
+    <link rel="stylesheet" href="../PRO_CSS/footer.css">
+<script src="../main.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <div class="row m-5">
+      <div id="navvv"></div>
+    </div>
+  </div>
+
+    
+
+    <h1>Top Services</h1>
+    <div class="container">
+        <div class="row" id="abc">
+            
+           
+        </div>
+    </div>
+
+    <script>
+        fetch("../json/service2.json")
+        .then(Response=>Response .json())
+        .then(data=>{
+            let y="";
+                for(let services of data){
+                    y+=`
+                    <div class="col-lg-4 ">
+                    <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-6">
+                    <img src="${services.img}" class="img-fluid rounded mt-lg-4" alt="Card title">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">${services.tittle}</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+                    `
+                }
+                document.querySelector("#abc").innerHTML=y
+        })
+    </script>
+
+<div class="container-fluid" id="footer">
+
+</div>
+
+</body>
+</html>
